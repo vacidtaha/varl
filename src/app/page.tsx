@@ -10,7 +10,7 @@ export default function Home() {
 
       <div className="relative w-full overflow-hidden">
         <img
-          src="/creation-of-adam.jpg"
+          src="/creation-of-adam.webp"
           alt=""
           className="h-[620px] w-full object-cover" style={{ objectPosition: "center 20%" }}
         />
@@ -41,7 +41,7 @@ export default function Home() {
         </h3>
         {/* Tek kutu */}
         <a href="#" className="group flex h-[360px] w-full overflow-hidden rounded-2xl">
-          <img src="/latest-1.png" alt="" className="h-full w-[65%] object-cover transition-transform duration-500 group-hover:scale-105" />
+          <img src="/latest-1.webp" alt="" loading="lazy" className="h-full w-[65%] object-cover transition-transform duration-500 group-hover:scale-105" />
           <div className="flex h-full w-[35%] flex-col justify-center gap-3 bg-white p-8 dark:bg-neutral-900">
             <span className="text-xs tracking-wide text-gray-400">February 10, 2026</span>
             <h4 className="text-xl font-medium leading-snug text-gray-900 dark:text-gray-100">VARL Publishes New Framework for Regenerative Agriculture</h4>
@@ -52,7 +52,7 @@ export default function Home() {
         {/* İkili kutular */}
         <div className="flex w-full gap-8">
           <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
-            <img src="/latest-2.png" alt="" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-2.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">February 3, 2026</span>
               <h4 className="text-base font-medium leading-snug text-gray-900 dark:text-gray-100">How Biological Camouflage Inspires New Drug Delivery Systems</h4>
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
           </a>
           <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
-            <img src="/latest-3.jpg" alt="" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-3.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">January 28, 2026</span>
               <h4 className="text-base font-medium leading-snug text-gray-900 dark:text-gray-100">Precision at the Molecular Level: Inside VARL&#39;s Protein Engineering Lab</h4>
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         <div className="flex w-full gap-8">
           <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
-            <img src="/latest-4.png" alt="" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-4.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">January 15, 2026</span>
               <h4 className="text-base font-medium leading-snug text-gray-900 dark:text-gray-100">Digital Twin Technology Maps Individual Health Trajectories</h4>
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
           </a>
           <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
-            <img src="/latest-5.jpg" alt="" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-5.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">January 6, 2026</span>
               <h4 className="text-base font-medium leading-snug text-gray-900 dark:text-gray-100">VARL Identifies Novel Biomarkers for Early Disease Detection</h4>
@@ -90,7 +90,7 @@ export default function Home() {
         {/* Üçlü kutular */}
         <div className="flex w-full gap-8">
           <a href="#" className="group w-1/3 overflow-hidden rounded-2xl">
-            <img src="/latest-6.jpg" alt="" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-6.webp" alt="" loading="lazy" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.5] w-full flex-col justify-center gap-2 bg-white p-5 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">December 20, 2025</span>
               <h4 className="text-sm font-medium leading-snug text-gray-900 dark:text-gray-100">AI Models Predict Plant Stress Before It Happens</h4>
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </a>
           <a href="#" className="group w-1/3 overflow-hidden rounded-2xl">
-            <img src="/latest-7.png" alt="" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-7.webp" alt="" loading="lazy" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.5] w-full flex-col justify-center gap-2 bg-white p-5 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">December 11, 2025</span>
               <h4 className="text-sm font-medium leading-snug text-gray-900 dark:text-gray-100">Decoding the Tomato Genome to Unlock Nutritional Potential</h4>
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
           </a>
           <a href="#" className="group w-1/3 overflow-hidden rounded-2xl">
-            <img src="/latest-8.jpg" alt="" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src="/latest-8.webp" alt="" loading="lazy" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.5] w-full flex-col justify-center gap-2 bg-white p-5 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">November 29, 2025</span>
               <h4 className="text-sm font-medium leading-snug text-gray-900 dark:text-gray-100">Lipid Nanoparticles: VARL&#39;s Next-Gen Cellular Repair Mechanism</h4>

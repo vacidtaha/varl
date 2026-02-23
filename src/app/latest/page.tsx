@@ -6,14 +6,14 @@ import Footer from "@/components/Footer";
 import Dropdown from "@/components/Dropdown";
 
 const articles = [
-  { date: "February 10, 2026", month: "February 2026", year: "2026", category: "Food", topic: "Agriculture", type: "Article", title: "VARL Publishes New Framework for Regenerative Agriculture", desc: "A systems-level approach to soil biology and crop resilience, powered by molecular simulation.", img: "/latest-1.png" },
-  { date: "February 3, 2026", month: "February 2026", year: "2026", category: "Health", topic: "Biology", type: "Article", title: "How Biological Camouflage Inspires New Drug Delivery Systems", desc: "Nature's stealth mechanisms are guiding VARL's next-gen targeted therapies.", img: "/latest-2.png" },
-  { date: "January 28, 2026", month: "January 2026", year: "2026", category: "Research", topic: "Biology", type: "Report", title: "Precision at the Molecular Level: Inside VARL's Protein Engineering Lab", desc: "Where craftsmanship meets computation to redesign biological structures.", img: "/latest-3.jpg" },
-  { date: "January 15, 2026", month: "January 2026", year: "2026", category: "Health", topic: "AI", type: "Case Study", title: "Digital Twin Technology Maps Individual Health Trajectories", desc: "Personalized simulations that predict disease before symptoms appear.", img: "/latest-4.png" },
-  { date: "January 6, 2026", month: "January 2026", year: "2026", category: "Health", topic: "Biology", type: "Press Release", title: "VARL Identifies Novel Biomarkers for Early Disease Detection", desc: "AI-driven analysis reveals signals invisible to traditional diagnostics.", img: "/latest-5.jpg" },
-  { date: "December 20, 2025", month: "December 2025", year: "2025", category: "Food", topic: "AI", type: "Article", title: "AI Models Predict Plant Stress Before It Happens", desc: "Lab-grown resilience testing for smarter crops.", img: "/latest-6.jpg" },
-  { date: "December 11, 2025", month: "December 2025", year: "2025", category: "Food", topic: "Agriculture", type: "Report", title: "Decoding the Tomato Genome to Unlock Nutritional Potential", desc: "How AI maps flavor, nutrition, and yield at once.", img: "/latest-7.png" },
-  { date: "November 29, 2025", month: "November 2025", year: "2025", category: "Health", topic: "Biology", type: "Article", title: "Lipid Nanoparticles: VARL's Next-Gen Cellular Repair Mechanism", desc: "Targeted delivery at the molecular frontier.", img: "/latest-8.jpg" },
+  { date: "February 10, 2026", month: "February 2026", year: "2026", category: "Food", topic: "Agriculture", type: "Article", title: "VARL Publishes New Framework for Regenerative Agriculture", desc: "A systems-level approach to soil biology and crop resilience, powered by molecular simulation.", img: "/latest-1.webp" },
+  { date: "February 3, 2026", month: "February 2026", year: "2026", category: "Health", topic: "Biology", type: "Article", title: "How Biological Camouflage Inspires New Drug Delivery Systems", desc: "Nature's stealth mechanisms are guiding VARL's next-gen targeted therapies.", img: "/latest-2.webp" },
+  { date: "January 28, 2026", month: "January 2026", year: "2026", category: "Research", topic: "Biology", type: "Report", title: "Precision at the Molecular Level: Inside VARL's Protein Engineering Lab", desc: "Where craftsmanship meets computation to redesign biological structures.", img: "/latest-3.webp" },
+  { date: "January 15, 2026", month: "January 2026", year: "2026", category: "Health", topic: "AI", type: "Case Study", title: "Digital Twin Technology Maps Individual Health Trajectories", desc: "Personalized simulations that predict disease before symptoms appear.", img: "/latest-4.webp" },
+  { date: "January 6, 2026", month: "January 2026", year: "2026", category: "Health", topic: "Biology", type: "Press Release", title: "VARL Identifies Novel Biomarkers for Early Disease Detection", desc: "AI-driven analysis reveals signals invisible to traditional diagnostics.", img: "/latest-5.webp" },
+  { date: "December 20, 2025", month: "December 2025", year: "2025", category: "Food", topic: "AI", type: "Article", title: "AI Models Predict Plant Stress Before It Happens", desc: "Lab-grown resilience testing for smarter crops.", img: "/latest-6.webp" },
+  { date: "December 11, 2025", month: "December 2025", year: "2025", category: "Food", topic: "Agriculture", type: "Report", title: "Decoding the Tomato Genome to Unlock Nutritional Potential", desc: "How AI maps flavor, nutrition, and yield at once.", img: "/latest-7.webp" },
+  { date: "November 29, 2025", month: "November 2025", year: "2025", category: "Health", topic: "Biology", type: "Article", title: "Lipid Nanoparticles: VARL's Next-Gen Cellular Repair Mechanism", desc: "Targeted delivery at the molecular frontier.", img: "/latest-8.webp" },
 ];
 
 export default function LatestPage() {
@@ -107,7 +107,7 @@ export default function LatestPage() {
               {items.map((article, i) => (
                 <div key={article.date + article.title}>
                   <a href="#" className="group flex items-center gap-8 py-6">
-                    <img src={article.img} alt="" className="h-36 w-56 shrink-0 rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src={article.img} alt="" loading="lazy" className="h-36 w-56 shrink-0 rounded-xl object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="flex flex-col gap-2">
                       <span className="text-sm text-gray-400">{article.date}</span>
                       <h4 className="text-xl font-medium text-gray-900 dark:text-gray-100">{article.title}</h4>

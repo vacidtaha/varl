@@ -12,7 +12,7 @@ export default function OpenSourcePage() {
       {/* Hero */}
       <div className="relative w-full overflow-hidden">
         <img
-          src="/open.jpg"
+          src="/open.webp"
           alt="Open Source"
           className="h-[620px] w-full object-cover"
         />

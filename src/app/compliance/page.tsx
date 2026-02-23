@@ -12,7 +12,7 @@ export default function CompliancePage() {
       {/* Hero */}
       <div className="relative w-full overflow-hidden">
         <img
-          src="/uyum.png"
+          src="/uyum.webp"
           alt="Compliance"
           className="h-[520px] w-full object-cover object-bottom"
         />

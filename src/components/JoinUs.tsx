@@ -10,7 +10,7 @@ export default function JoinUs({
   return (
     <div className="mx-auto w-[1300px] max-w-full px-8 pb-32 pt-16">
       <div className="relative overflow-hidden rounded-2xl">
-        <img src="/joinus.jpg" alt="" className="absolute inset-0 h-full w-full object-cover object-bottom" />
+        <img src="/joinus.webp" alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover object-bottom" />
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative flex flex-col items-center gap-8 px-12 py-24 text-center">
           <h2 className="text-5xl tracking-tight text-white" style={{ fontWeight: 500 }}>

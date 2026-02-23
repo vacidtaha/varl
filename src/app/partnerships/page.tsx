@@ -12,7 +12,7 @@ export default function PartnershipsPage() {
       {/* Hero */}
       <div className="relative w-full overflow-hidden">
         <img
-          src="/partnership.jpg"
+          src="/partnership.webp"
           alt="Partnership"
           className="h-screen w-full object-cover"
         />

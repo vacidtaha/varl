@@ -24,7 +24,7 @@ export default function SciencePage() {
 
       <div className="relative w-full overflow-hidden">
         <img
-          src="/solvay.jpg"
+          src="/solvay.webp"
           alt=""
           className="h-[620px] w-full object-cover"
         />
@@ -465,7 +465,7 @@ export default function SciencePage() {
 
       <div className="relative w-full overflow-hidden">
         <img
-          src="/science-hero.png"
+          src="/science-hero.webp"
           alt=""
           className="h-[600px] w-full object-cover"
         />

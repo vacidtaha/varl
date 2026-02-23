@@ -155,8 +155,9 @@ export default function CareersPage() {
       {/* Hero Image */}
       <div className="mx-auto w-full max-w-6xl px-8">
         <img
-          src="/c1.jpg"
+          src="/c1.webp"
           alt="VARL Team"
+          loading="lazy"
           className="h-[560px] w-full rounded-3xl object-cover"
         />
       </div>

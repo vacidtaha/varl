@@ -40,7 +40,7 @@ export default function WhitePapersPage() {
 
       <div className="relative w-full overflow-hidden">
         <img
-          src="/white-hero.png"
+          src="/white-hero.webp"
           alt=""
           className="h-[620px] w-full object-cover"
         />
