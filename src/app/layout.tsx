@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VarlNet",
-  description: "VarlNet - Modern Web Projesi",
+  title: {
+    default: "Varl",
+    template: "Varl | %s",
+  },
+  description: "VARL — Biological Intelligence Platform",
 };
 
 export default function RootLayout({

@@ -75,6 +75,12 @@ export default function Hero() {
     moveTo(indexRef.current - 1, true);
   }, [moveTo]);
 
+  // Auto advance every 42 seconds
+  useEffect(() => {
+    const interval = setInterval(goNext, 42000);
+    return () => clearInterval(interval);
+  }, [goNext]);
+
   useEffect(() => {
     requestAnimationFrame(() => {
       moveTo(OFFSET, false);
@@ -87,6 +93,78 @@ export default function Hero() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [moveTo]);
+
+  const isDragging = useRef(false);
+  const dragBasePos = useRef(0);
+  const snapTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const getCurrentTranslateX = useCallback(() => {
+    if (!trackRef.current) return 0;
+    const style = getComputedStyle(trackRef.current);
+    const matrix = new DOMMatrix(style.transform);
+    return matrix.m41;
+  }, []);
+
+  const snapToNearest = useCallback(() => {
+    if (!trackRef.current) return;
+    const track = trackRef.current;
+    const containerWidth = track.parentElement?.clientWidth ?? 0;
+    const currentX = getCurrentTranslateX();
+
+    let closestIdx = OFFSET;
+    let closestDist = Infinity;
+
+    for (let i = 0; i < extendedSlides.length; i++) {
+      const card = track.children[i] as HTMLElement;
+      if (!card) continue;
+      const cardCenter = card.offsetLeft + card.clientWidth / 2;
+      const targetX = -(cardCenter - containerWidth / 2);
+      const dist = Math.abs(currentX - targetX);
+      if (dist < closestDist) {
+        closestDist = dist;
+        closestIdx = i;
+      }
+    }
+
+    isDragging.current = false;
+    moveTo(closestIdx, true);
+  }, [getCurrentTranslateX, moveTo]);
+
+  useEffect(() => {
+    const container = trackRef.current?.parentElement;
+    if (!container) return;
+
+    const handleWheel = (e: WheelEvent) => {
+      const dx = Math.abs(e.deltaX);
+      const dy = Math.abs(e.deltaY);
+      if (dx < 3 || dy > dx * 1.5) return;
+
+      e.preventDefault();
+
+      if (!isDragging.current) {
+        isDragging.current = true;
+        dragBasePos.current = getCurrentTranslateX();
+        if (trackRef.current) {
+          trackRef.current.style.transition = "none";
+        }
+      }
+
+      dragBasePos.current -= e.deltaX * 1.5;
+
+      if (trackRef.current) {
+        trackRef.current.style.transform = `translateX(${dragBasePos.current}px)`;
+      }
+
+      if (snapTimer.current) clearTimeout(snapTimer.current);
+      snapTimer.current = setTimeout(snapToNearest, 120);
+    };
+
+    container.addEventListener("wheel", handleWheel, { passive: false });
+    return () => {
+      container.removeEventListener("wheel", handleWheel);
+      if (snapTimer.current) clearTimeout(snapTimer.current);
+    };
+  }, [getCurrentTranslateX, snapToNearest]);
 
   return (
     <section className="w-full overflow-hidden py-16">
