@@ -5,11 +5,10 @@ import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const slides = [
-  { id: 1, label: "Slide 1", video: "/slide-1.mp4", source: "Molecular Modeling, Washington University, 1970s", link: "/about", linkLabel: "About" },
+  { id: 1, label: "Slide 1", video: "/slide-1.mp4", source: "Molecular Modeling, Washington University, 1970s", link: "/science", linkLabel: "Science" },
   { id: 2, label: "Slide 2", image: "/slide-2.webp", source: "Robert Hooke, Drawings of Cork Structure, Micrographia, 1665", headline: "Health. Continuous.", description: "Our goal is not only to treat disease, but to make health sustainable and continuous.", link: "/health", linkLabel: "Health" },
   { id: 3, label: "Slide 3", image: "/slide-3.webp", source: "Norman Borlaug standing in wheat field, 1960s", headline: "Production Is\nNot Enough.", description: "The future will not be built by producing more, but by transforming food into intelligent and resilient systems.", link: "/food", linkLabel: "Food" },
-  { id: 4, label: "Slide 4", image: "/slide-4.webp", source: "The Pasteur Boom—High Times for Hydrophobists, 1885-Dec-23", headline: "Waiting Is Not\na Strategy.", description: "Disease research should no longer depend on multi-year cycles.", link: "/research", linkLabel: "Research" },
-  { id: 5, label: "Slide 5", image: "/slide-5.webp", source: "Genevieve Work in Receiving Room at Dearborn laboratory facility, Circa 1924", headline: "A Better Science\nIs Possible.", description: "Varl accelerates discovery and transforms disease management into a systematic, continuous process.", link: "/science", linkLabel: "Science" },
+  { id: 4, label: "Slide 4", image: "/slide-5.webp", source: "Genevieve Work in Receiving Room at Dearborn laboratory facility, Circa 1924", headline: "The Work Behind\nthe Work.", description: "Every breakthrough starts with someone who refused to accept the limits of what was known.", link: "/about", linkLabel: "About" },
 ];
 
 const TOTAL = slides.length;

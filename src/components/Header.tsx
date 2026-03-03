@@ -33,9 +33,6 @@ export default function Header({ forceDark = false }: { forceDark?: boolean }) {
           <Link href="/publications" className={`transition-colors ${navHover}`}>
             Publications
           </Link>
-          <Link href="/pipeline" className={`transition-colors ${navHover}`}>
-            Pipeline
-          </Link>
           <Link href="/contact" className={`transition-colors ${navHover}`}>
             Contact
           </Link>

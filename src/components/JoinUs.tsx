@@ -20,11 +20,11 @@ export default function JoinUs({
             {description}
           </p>
           <a
-            href="/careers"
+            href="/contact"
             className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-2.5 text-sm text-white backdrop-blur-sm transition-all hover:border-white/60 hover:bg-white/10"
             style={{ fontWeight: 450 }}
           >
-            <span style={{ color: "#ffffff" }}>Careers</span>
+            <span style={{ color: "#ffffff" }}>Contact</span>
           </a>
         </div>
       </div>

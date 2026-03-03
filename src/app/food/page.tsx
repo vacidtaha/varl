@@ -175,7 +175,7 @@ export default function FoodPage() {
                   Agriculture consumes 72% of global freshwater. Aquifers that took millennia to fill are being drained in decades. The Ogallala Aquifer under the American Great Plains — the source of 30% of U.S. irrigation water — is depleting 12 times faster than it recharges. In India, 54% of groundwater wells are declining. When the water runs out, the food runs out.
                 </p>
                 <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                  We model plant-water relationships at the cellular level. Our systems simulate stomatal conductance, root hydraulic architecture, and soil moisture dynamics to design irrigation protocols that deliver precisely the amount of water each plant needs — and nothing more. Our digital twins of watershed systems predict drought impact years in advance, enabling preemptive strategy shifts instead of reactive crisis management.
+                  We are developing models of plant-water relationships at the cellular level — simulating stomatal conductance, root hydraulic architecture, and soil moisture dynamics to design irrigation protocols that deliver precisely the amount of water each plant needs, and nothing more. Our approach includes building digital twins of watershed systems to predict drought impact years in advance, enabling preemptive strategy shifts instead of reactive crisis management.
                 </p>
               </FadeIn>
               <FadeIn className="flex-1" delay={0.2}>
@@ -186,7 +186,7 @@ export default function FoodPage() {
                   </div>
                   <div className="rounded-xl bg-gray-50 p-6 dark:bg-neutral-900">
                     <span className="text-3xl font-semibold text-blue-500">40%</span>
-                    <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">water reduction with our protocols</p>
+                    <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">targeted water reduction</p>
                   </div>
                   <div className="rounded-xl bg-gray-50 p-6 dark:bg-neutral-900">
                     <span className="text-3xl font-semibold text-blue-500">12x</span>
@@ -202,7 +202,7 @@ export default function FoodPage() {
           </div>
         </section>
 
-        {/* === MODERN AGRICULTURE === */}
+        {/* === PRECISION AGRICULTURE === */}
         <section className="py-32">
           <div className="mx-auto max-w-5xl px-8">
             <FadeIn>
@@ -213,7 +213,7 @@ export default function FoodPage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mt-10 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                75% of crop genetic diversity has been erased in a century. The same handful of varieties are grown across entire continents — optimized for yield in perfect conditions, catastrophically vulnerable to change. We scan the full genomic landscape of crop species — including wild relatives and ancient cultivars industrial agriculture forgot — to design varieties computationally in months, not decades.
+                75% of crop genetic diversity has been erased in a century. The same handful of varieties are grown across entire continents — optimized for yield in perfect conditions, catastrophically vulnerable to change. Our approach scans the full genomic landscape of crop species — including wild relatives and ancient cultivars industrial agriculture forgot — to design varieties computationally in months instead of the decades traditional breeding requires.
               </p>
             </FadeIn>
 
@@ -222,21 +222,21 @@ export default function FoodPage() {
                 <div className="flex">
                   <div className="flex w-1/2 flex-col justify-center gap-4 bg-green-50 p-10 dark:bg-green-950/30">
                     <h4 className="text-xl text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Molecular Crop Design</h4>
-                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">AI identifies traits for drought tolerance, pest resistance, and nutrient density across the complete proteome. A variety that takes 15 years to breed conventionally — we design, simulate, and validate in under 6 months.</p>
+                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">Our AI is being trained to identify traits for drought tolerance, pest resistance, and nutrient density across the complete proteome. A variety that takes 15 years to breed conventionally — our target is to design, simulate, and validate it in under 6 months.</p>
                   </div>
                   <div className="flex w-1/2 flex-col justify-center gap-4 bg-green-100 p-10 dark:bg-green-900/30">
                     <h4 className="text-xl text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Predictive Field Intelligence</h4>
-                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">We simulate crop performance under 47 climate scenarios simultaneously. Temperature, precipitation, pest migration, soil moisture — modeled at field resolution. Prescriptive intelligence delivered before the season begins.</p>
+                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">We are building models designed to simulate crop performance under dozens of climate scenarios simultaneously. Temperature, precipitation, pest migration, soil moisture — modeled at field resolution. The goal: prescriptive intelligence delivered before the season begins.</p>
                   </div>
                 </div>
                 <div className="flex">
                   <div className="flex w-1/2 flex-col justify-center gap-4 bg-green-100 p-10 dark:bg-green-900/30">
                     <h4 className="text-xl text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Pest &amp; Disease Interception</h4>
-                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">Molecular detection of plant stress signals weeks before visible damage. Our models predict outbreak trajectories and design biological countermeasures that eliminate the need for broad-spectrum pesticides.</p>
+                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">We are developing molecular detection systems designed to identify plant stress signals weeks before visible damage. Our models will predict outbreak trajectories and inform biological countermeasures that can eliminate the need for broad-spectrum pesticides.</p>
                   </div>
                   <div className="flex w-1/2 flex-col justify-center gap-4 bg-green-50 p-10 dark:bg-green-950/30">
                     <h4 className="text-xl text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Nutritional Optimization</h4>
-                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">Food is molecular information. We map complete nutritional profiles at the metabolomic level — thousands of bioactive compounds beyond macronutrients. Tomatoes optimized for lycopene. Wheat with enhanced iron bioavailability. Food that heals.</p>
+                    <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">Food is molecular information. Our platform is being designed to map complete nutritional profiles at the metabolomic level — thousands of bioactive compounds beyond macronutrients. Tomatoes optimized for lycopene. Wheat with enhanced iron bioavailability. Food engineered to heal.</p>
                   </div>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function FoodPage() {
                   1.3 billion tonnes of food are lost or wasted every year — enough to feed every hungry person on Earth four times over. The problem is not production. It is the chain between harvest and consumption: inadequate cold storage, inefficient logistics, packaging that cannot communicate spoilage, and varieties bred for appearance rather than resilience.
                 </p>
                 <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                  We apply molecular analysis to post-harvest biology — predicting spoilage timelines for individual shipments, optimizing cold chain routing in real time, designing packaging materials that respond to decomposition signals, and engineering crop varieties with naturally extended shelf life. We model entire supply chains as biological systems, identifying the exact points where food is lost and designing molecular-level interventions to prevent it.
+                  We are applying molecular analysis to post-harvest biology — developing tools to predict spoilage timelines for individual shipments, optimize cold chain routing, design packaging materials that respond to decomposition signals, and engineer crop varieties with naturally extended shelf life. Our approach treats entire supply chains as biological systems, identifying the exact points where food is lost and designing molecular-level interventions to prevent it.
                 </p>
               </FadeIn>
               <FadeInStagger className="flex flex-1 flex-col gap-4" stagger={0.12}>
@@ -296,26 +296,26 @@ export default function FoodPage() {
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                We build digital twins of soil microbiomes — modeling the relationships between bacteria, fungi, plant roots, and mineral cycles at molecular resolution. Our computationally optimized restoration protocols use microbial consortia, biochar formulations, and cover crop sequences. Results: degraded land recovered to 78% of reference ecosystem levels within a single growing season, validated across 14 field sites on 4 continents.
+                We are building digital twins of soil microbiomes — modeling the relationships between bacteria, fungi, plant roots, and mineral cycles at molecular resolution. Our computationally optimized restoration protocols will use microbial consortia, biochar formulations, and cover crop sequences designed to recover degraded land to productive capacity within a single growing season.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.2} y={50}>
               <div className="mt-16 flex overflow-hidden rounded-2xl">
                 <div className="flex w-1/3 flex-col gap-3 bg-yellow-100 p-8 dark:bg-yellow-900/20">
-                  <span className="text-xs tracking-widest text-yellow-700 dark:text-yellow-400" style={{ fontWeight: 500 }}>BEFORE</span>
+                  <span className="text-xs tracking-widest text-yellow-700 dark:text-yellow-400" style={{ fontWeight: 500 }}>CURRENT STATE</span>
                   <span className="text-4xl font-semibold text-yellow-700 dark:text-yellow-500">Degraded</span>
                   <p className="text-sm text-yellow-600/70 dark:text-yellow-400/50">Compacted, depleted, chemically dependent. Less than 2% organic matter. Zero biological activity.</p>
                 </div>
                 <div className="flex w-1/3 flex-col gap-3 bg-yellow-50 p-8 dark:bg-yellow-950/20">
-                  <span className="text-xs tracking-widest text-yellow-600 dark:text-yellow-400" style={{ fontWeight: 500 }}>1 SEASON</span>
-                  <span className="text-4xl font-semibold text-gray-700 dark:text-gray-300">78%</span>
+                  <span className="text-xs tracking-widest text-yellow-600 dark:text-yellow-400" style={{ fontWeight: 500 }}>TARGET: 1 SEASON</span>
+                  <span className="text-4xl font-semibold text-gray-700 dark:text-gray-300">&gt;75%</span>
                   <p className="text-sm text-gray-500 dark:text-gray-400">Recovery to reference ecosystem levels. Microbial diversity restored. Root network depth tripled.</p>
                 </div>
                 <div className="flex w-1/3 flex-col gap-3 bg-green-50 p-8 dark:bg-green-950/20">
-                  <span className="text-xs tracking-widest text-green-600 dark:text-green-400" style={{ fontWeight: 500 }}>3 SEASONS</span>
+                  <span className="text-xs tracking-widest text-green-600 dark:text-green-400" style={{ fontWeight: 500 }}>TARGET: 3 SEASONS</span>
                   <span className="text-4xl font-semibold text-green-700 dark:text-green-400">Regenerated</span>
-                  <p className="text-sm text-green-600/70 dark:text-green-400/50">Self-sustaining fertility. Carbon-negative. Chemical inputs eliminated. Yield exceeds pre-degradation levels.</p>
+                  <p className="text-sm text-green-600/70 dark:text-green-400/50">Self-sustaining fertility. Carbon-negative. Chemical inputs eliminated. Yield exceeding pre-degradation levels.</p>
                 </div>
               </div>
             </FadeIn>
@@ -337,7 +337,7 @@ export default function FoodPage() {
                   Livestock produces 14.5% of global greenhouse emissions and consumes one-third of all grain. Antibiotic resistance from industrial animal farming kills 1.27 million people per year. The current model is unsustainable — but the world&apos;s demand for animal protein continues to grow.
                 </p>
                 <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                  We model animal health at the genomic level — predicting disease outbreaks before they spread through herds, optimizing feed conversion efficiency to reduce waste, eliminating antibiotic dependence through molecular-level immune support, and designing breeding programs that produce resilient animals with lower environmental footprint. Every intervention is validated computationally before it reaches the farm.
+                  We are developing genomic-level models of animal health — designed to predict disease outbreaks before they spread through herds, optimize feed conversion efficiency to reduce waste, eliminate antibiotic dependence through molecular-level immune support, and inform breeding programs that produce resilient animals with lower environmental footprint. Every intervention will be validated computationally before it reaches the farm.
                 </p>
               </FadeIn>
               <FadeInStagger className="flex flex-1 flex-col gap-4" stagger={0.12}>
@@ -369,12 +369,12 @@ export default function FoodPage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mt-10 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                600 million people fall ill from contaminated food every year. 420,000 die. Current testing catches contamination after it enters the supply chain — sometimes after it reaches the consumer. Our molecular detection systems identify pathogens, mycotoxins, pesticide residues, heavy metals, and allergens at concentrations invisible to conventional testing — in real time, at the source.
+                600 million people fall ill from contaminated food every year. 420,000 die. Current testing catches contamination after it enters the supply chain — sometimes after it reaches the consumer. We are engineering molecular detection systems designed to identify pathogens, mycotoxins, pesticide residues, heavy metals, and allergens at concentrations invisible to conventional testing — in real time, at the source.
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
               <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-                We don&apos;t just detect threats — we predict them. Our AI models pathogen evolution, anticipating which food safety risks will emerge next, where they will appear, and how they will spread. Prevention designed at the molecular level, deployed before the first case is reported.
+                Detection alone is not enough. Our AI is being trained to model pathogen evolution — anticipating which food safety risks will emerge next, where they will appear, and how they will spread. The goal is prevention designed at the molecular level, deployed before the first case is reported.
               </p>
             </FadeIn>
 
@@ -388,8 +388,8 @@ export default function FoodPage() {
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">deaths per year from foodborne illness</p>
               </div>
               <div className="rounded-2xl bg-gray-50 p-8 dark:bg-neutral-900">
-                <span className="text-4xl font-semibold text-rose-500">10x</span>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">our detection sensitivity vs conventional testing</p>
+                <span className="text-4xl font-semibold text-rose-500">&gt;10x</span>
+                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">targeted detection sensitivity vs conventional testing</p>
               </div>
             </FadeInStagger>
           </div>
@@ -402,7 +402,7 @@ export default function FoodPage() {
               From Soil to System
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-500 dark:text-gray-400" style={{ fontWeight: 400 }}>
-              We operate across the entire food chain — not just one link.
+              We are building across the entire food chain — not just one link.
             </p>
           </FadeIn>
 

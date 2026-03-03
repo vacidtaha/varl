@@ -25,7 +25,7 @@
 *.pem
 
 # large media files
-public/slide-1.mp4
+*.mp4
 
 # debug
 npm-debug.log*

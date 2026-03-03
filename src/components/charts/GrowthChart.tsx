@@ -3,15 +3,14 @@
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
 const data = [
-  { quarter: "Q1 '24", traditional: 12, varl: 15 },
-  { quarter: "Q2 '24", traditional: 14, varl: 28 },
-  { quarter: "Q3 '24", traditional: 15, varl: 52 },
-  { quarter: "Q4 '24", traditional: 17, varl: 89 },
-  { quarter: "Q1 '25", traditional: 18, varl: 145 },
-  { quarter: "Q2 '25", traditional: 20, varl: 234 },
-  { quarter: "Q3 '25", traditional: 21, varl: 378 },
-  { quarter: "Q4 '25", traditional: 23, varl: 590 },
-  { quarter: "Q1 '26", traditional: 24, varl: 847 },
+  { quarter: "Q1 '26", traditional: 12, varl: 18 },
+  { quarter: "Q2 '26", traditional: 13, varl: 34 },
+  { quarter: "Q3 '26", traditional: 14, varl: 65 },
+  { quarter: "Q4 '26", traditional: 15, varl: 110 },
+  { quarter: "Q1 '27", traditional: 16, varl: 190 },
+  { quarter: "Q2 '27", traditional: 17, varl: 310 },
+  { quarter: "Q3 '27", traditional: 18, varl: 480 },
+  { quarter: "Q4 '27", traditional: 19, varl: 720 },
 ];
 
 export default function GrowthChart() {
@@ -63,7 +62,7 @@ export default function GrowthChart() {
           stroke="#4F8CF7"
           strokeWidth={2}
           fill="url(#varlGrad)"
-          name="VARL Platform"
+          name="VARL (projected)"
         />
       </AreaChart>
     </ResponsiveContainer>

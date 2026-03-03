@@ -52,7 +52,6 @@ export default function Footer({ className, forceDark = false }: { className?: s
               <nav className={`flex flex-col gap-2 text-sm ${navText}`}>
                 <Link href="/health" className={`transition-colors ${navHover}`}>Health</Link>
                 <Link href="/food" className={`transition-colors ${navHover}`}>Food</Link>
-                <Link href="/pipeline" className={`transition-colors ${navHover}`}>Pipeline</Link>
                 <Link href="/api" className={`transition-colors ${navHover}`}>API</Link>
               </nav>
             </div>
@@ -61,7 +60,6 @@ export default function Footer({ className, forceDark = false }: { className?: s
               <nav className={`flex flex-col gap-2 text-sm ${navText}`}>
                 <Link href="/publications" className={`transition-colors ${navHover}`}>Publications</Link>
                 <Link href="/science" className={`transition-colors ${navHover}`}>Science</Link>
-                <Link href="/open-source" className={`transition-colors ${navHover}`}>Open Source</Link>
                 <Link href="/white-papers" className={`transition-colors ${navHover}`}>White Papers</Link>
               </nav>
             </div>
@@ -70,7 +68,6 @@ export default function Footer({ className, forceDark = false }: { className?: s
               <nav className={`flex flex-col gap-2 text-sm ${navText}`}>
                 <Link href="/about" className={`transition-colors ${navHover}`}>About</Link>
                 <Link href="/latest" className={`transition-colors ${navHover}`}>Latest</Link>
-                <Link href="/careers" className={`transition-colors ${navHover}`}>Careers</Link>
                 <Link href="/partnerships" className={`transition-colors ${navHover}`}>Partnerships</Link>
                 <Link href="/investors" className={`transition-colors ${navHover}`}>Investors</Link>
                 <Link href="/contact" className={`transition-colors ${navHover}`}>Contact</Link>

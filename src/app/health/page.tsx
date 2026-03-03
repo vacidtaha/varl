@@ -70,7 +70,7 @@ export default function HealthPage() {
           </div>
         </section>
 
-        {/* Why Health Matters — Human, Empathetic */}
+        {/* Why Health Matters */}
         <section className="mx-auto max-w-3xl px-8 pb-20">
           <FadeIn>
             <h2 className="text-5xl tracking-tight text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>
@@ -89,12 +89,12 @@ export default function HealthPage() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-              We started this company because we believe that losing someone to a disease we could have predicted is not a tragedy of nature. It is a failure of tools. The biology was there. The signals were there. We just didn&apos;t have a system capable of reading them fast enough, deeply enough, personally enough. Now we do.
+              We started this company because we believe that losing someone to a disease we could have predicted is not a tragedy of nature. It is a failure of tools. The biology is there. The signals are there. What has been missing is a system capable of reading them fast enough, deeply enough, personally enough. That is what we are building.
             </p>
           </FadeIn>
           <FadeIn delay={0.25}>
             <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-              Every technology we build, every model we train, every simulation we run comes back to a single question: does this give someone more time? Time measured in birthdays, in first steps, in one more conversation with the person they love. If it does, we ship it. If it doesn&apos;t, we go back and make it better.
+              Every technology we develop, every model we design, every simulation we architect comes back to a single question: will this give someone more time? Time measured in birthdays, in first steps, in one more conversation with the person they love. If the answer is yes, we build it. If it is not, we go back and make it better.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
@@ -140,23 +140,23 @@ export default function HealthPage() {
               </div>
               <div className="flex w-1/2 flex-col justify-between bg-gray-950 p-12 dark:bg-black">
                 <div>
-                  <span className="text-xs tracking-widest text-red-400">WHAT VARL CHANGES</span>
+                  <span className="text-xs tracking-widest text-red-400">WHAT WE ARE BUILDING TOWARD</span>
                   <div className="mt-8 flex flex-col gap-8">
                     <div>
-                      <span className="text-6xl font-semibold tracking-tight text-white">96%</span>
-                      <p className="mt-1 text-sm text-white/50">simulation-validated success rate</p>
+                      <span className="text-6xl font-semibold tracking-tight text-white">&gt;90%</span>
+                      <p className="mt-1 text-sm text-white/50">target success rate through simulation-first validation</p>
                     </div>
                     <div>
-                      <span className="text-6xl font-semibold tracking-tight text-white">$120M</span>
-                      <p className="mt-1 text-sm text-white/50">average development cost with digital twins</p>
+                      <span className="text-6xl font-semibold tracking-tight text-white">&lt;$150M</span>
+                      <p className="mt-1 text-sm text-white/50">projected development cost with digital twin screening</p>
                     </div>
                     <div>
                       <span className="text-6xl font-semibold tracking-tight text-white">1–3 yrs</span>
-                      <p className="mt-1 text-sm text-white/50">accelerated discovery-to-validation cycle</p>
+                      <p className="mt-1 text-sm text-white/50">targeted discovery-to-validation cycle</p>
                     </div>
                     <div>
                       <span className="text-6xl font-semibold tracking-tight text-white">100%</span>
-                      <p className="mt-1 text-sm text-white/50">personalized to individual biology</p>
+                      <p className="mt-1 text-sm text-white/50">designed for individual biology, not population averages</p>
                     </div>
                   </div>
                 </div>
@@ -211,10 +211,10 @@ export default function HealthPage() {
         <section className="mx-auto max-w-5xl px-8 pb-32">
           <FadeIn>
             <h2 className="text-5xl tracking-tight text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>
-              How VARL Redefines Health
+              Our Approach to Health
             </h2>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-              We do not iterate on the existing system. We replace it. VARL treats health not as the absence of disease, but as a continuously optimized state — monitored at the molecular level, predicted before disruption, and corrected with precision that the current pharmaceutical paradigm cannot achieve.
+              We are not iterating on the existing system. We are designing its replacement. VARL&apos;s platform is being built to treat health not as the absence of disease, but as a continuously optimized state — monitored at the molecular level, predicted before disruption, and corrected with precision that the current pharmaceutical paradigm cannot achieve.
             </p>
           </FadeIn>
 
@@ -223,7 +223,7 @@ export default function HealthPage() {
               <div className="flex gap-12 border-t border-gray-200 py-10 dark:border-neutral-800">
                 <span className="w-56 shrink-0 text-2xl font-medium text-gray-900 dark:text-gray-100">Predictive<br />Diagnostics</span>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Disease begins at the molecular level years before symptoms appear. VARL&apos;s AI models analyze genomic, proteomic, and metabolomic data to identify disease trajectories in their earliest stages — when intervention is most effective and least invasive. We detect what traditional diagnostics miss: the silent molecular shifts that precede cancer, neurodegeneration, autoimmunity, and metabolic collapse.
+                  Disease begins at the molecular level years before symptoms appear. We are developing AI models that analyze genomic, proteomic, and metabolomic data to identify disease trajectories in their earliest stages — when intervention is most effective and least invasive. Our goal is to detect what traditional diagnostics miss: the silent molecular shifts that precede cancer, neurodegeneration, autoimmunity, and metabolic collapse.
                 </p>
               </div>
             </FadeIn>
@@ -231,7 +231,7 @@ export default function HealthPage() {
               <div className="flex gap-12 border-t border-gray-200 py-10 dark:border-neutral-800">
                 <span className="w-56 shrink-0 text-2xl font-medium text-gray-900 dark:text-gray-100">Digital Twin<br />Medicine</span>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Every patient is unique at the molecular level. VARL constructs digital twins — computational replicas of individual biological systems — that simulate how each patient will respond to every possible treatment. Instead of prescribing based on population averages and hoping for the best, clinicians can test thousands of therapeutic scenarios computationally before administering a single dose. This is not personalized medicine as a marketing term. It is medicine redesigned from first principles.
+                  Every patient is unique at the molecular level. We are building a platform that constructs digital twins — computational replicas of individual biological systems — capable of simulating how each patient will respond to every possible treatment. Instead of prescribing based on population averages and hoping for the best, clinicians will be able to test thousands of therapeutic scenarios computationally before administering a single dose. This is not personalized medicine as a marketing term. It is medicine redesigned from first principles.
                 </p>
               </div>
             </FadeIn>
@@ -239,7 +239,7 @@ export default function HealthPage() {
               <div className="flex gap-12 border-t border-gray-200 py-10 dark:border-neutral-800">
                 <span className="w-56 shrink-0 text-2xl font-medium text-gray-900 dark:text-gray-100">Accelerated<br />Drug Discovery</span>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  The traditional drug pipeline wastes 86% of its candidates because it cannot predict failure until it is too late. VARL&apos;s simulation engine screens millions of molecular candidates against digital twin models simultaneously, identifying toxicity risks, efficacy limits, and off-target effects before any compound enters a laboratory. We compress the discovery-to-validation cycle from 15 years to under 3 — and increase the success rate from 14% to over 96%.
+                  The traditional drug pipeline wastes 86% of its candidates because it cannot predict failure until it is too late. We are engineering a simulation engine designed to screen millions of molecular candidates against digital twin models simultaneously — identifying toxicity risks, efficacy limits, and off-target effects before any compound enters a laboratory. Our target is to compress the discovery-to-validation cycle from 15 years to under 3, and to fundamentally change the economics of drug development.
                 </p>
               </div>
             </FadeIn>
@@ -247,7 +247,7 @@ export default function HealthPage() {
               <div className="flex gap-12 border-t border-gray-200 py-10 dark:border-neutral-800">
                 <span className="w-56 shrink-0 text-2xl font-medium text-gray-900 dark:text-gray-100">Regenerative<br />Engineering</span>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Most treatments manage disease. VARL designs interventions that reverse it. By identifying the molecular switches that control tissue regeneration, stem cell activation, and cellular reprogramming, our platform generates therapies that restore biological function rather than merely slowing its decline. From neuronal repair in Alzheimer&apos;s disease to cardiac tissue regeneration after myocardial infarction — we map the pathways back to health.
+                  Most treatments manage disease. We are working to design interventions that reverse it. By identifying the molecular switches that control tissue regeneration, stem cell activation, and cellular reprogramming, our platform will generate therapies that restore biological function rather than merely slowing its decline. From neuronal repair in Alzheimer&apos;s disease to cardiac tissue regeneration after myocardial infarction — we are mapping the pathways back to health.
                 </p>
               </div>
             </FadeIn>
@@ -255,7 +255,7 @@ export default function HealthPage() {
               <div className="flex gap-12 border-t border-b border-gray-200 py-10 dark:border-neutral-800">
                 <span className="w-56 shrink-0 text-2xl font-medium text-gray-900 dark:text-gray-100">Continuous<br />Health Intelligence</span>
                 <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  Health is not a binary state. It is a dynamic system that requires continuous monitoring and adaptive response. VARL&apos;s biosensor-integrated platform tracks hundreds of molecular biomarkers in real time, detecting deviations from healthy baselines before they cascade into clinical disease. Digital twins update continuously as new data arrives, enabling a model of healthcare where treatment is proactive, not reactive — and where the concept of being &ldquo;too late&rdquo; ceases to exist.
+                  Health is not a binary state. It is a dynamic system that requires continuous monitoring and adaptive response. We are developing a biosensor-integrated platform designed to track hundreds of molecular biomarkers in real time, detecting deviations from healthy baselines before they cascade into clinical disease. Digital twins will update continuously as new data arrives, enabling a model of healthcare where treatment is proactive, not reactive — and where the concept of being &ldquo;too late&rdquo; ceases to exist.
                 </p>
               </div>
             </FadeIn>
@@ -269,7 +269,7 @@ export default function HealthPage() {
               Focus Areas
             </h2>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-600 dark:text-gray-400" style={{ fontWeight: 400 }}>
-              VARL concentrates its health platform on disease categories where computational biology can deliver the greatest impact — where the gap between what is known and what is treated is widest, and where traditional approaches have systematically failed.
+              VARL is concentrating its health platform on disease categories where computational biology can deliver the greatest impact — where the gap between what is known and what is treated is widest, and where traditional approaches have systematically failed.
             </p>
           </FadeIn>
 
@@ -278,42 +278,42 @@ export default function HealthPage() {
               <span className="text-3xl font-semibold text-red-500">01</span>
               <h4 className="text-lg text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Oncology</h4>
               <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                10 million deaths per year. VARL models tumor microenvironments at single-cell resolution, identifies novel drug targets within signaling cascades, and predicts immunotherapy response on a per-patient basis. Every cancer is unique. Every treatment should be too.
+                10 million deaths per year. Our platform is being designed to model tumor microenvironments at single-cell resolution, identify novel drug targets within signaling cascades, and predict immunotherapy response on a per-patient basis. Every cancer is unique. Every treatment should be too.
               </p>
             </div>
             <div className="flex flex-col gap-3 rounded-2xl bg-white p-8 dark:bg-neutral-900">
               <span className="text-3xl font-semibold text-red-500">02</span>
               <h4 className="text-lg text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Neurodegeneration</h4>
               <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                55 million people living with dementia. VARL&apos;s digital twins simulate neuronal network degradation, protein misfolding cascades, and blood-brain barrier dynamics to identify intervention points that arrest and reverse cognitive decline. We model what MRIs cannot see.
+                55 million people living with dementia. We are developing digital twin architectures that simulate neuronal network degradation, protein misfolding cascades, and blood-brain barrier dynamics to identify intervention points that arrest and reverse cognitive decline — modeling what MRIs cannot see.
               </p>
             </div>
             <div className="flex flex-col gap-3 rounded-2xl bg-white p-8 dark:bg-neutral-900">
               <span className="text-3xl font-semibold text-red-500">03</span>
               <h4 className="text-lg text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Autoimmune Disease</h4>
               <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                300+ million affected globally. The immune system attacking itself is a systems failure, not a single-gene problem. VARL maps the complete immune regulatory network to find the precise points where tolerance breaks down — enabling therapies that recalibrate rather than suppress.
+                300+ million affected globally. The immune system attacking itself is a systems failure, not a single-gene problem. Our approach maps the complete immune regulatory network to find the precise points where tolerance breaks down — enabling therapies designed to recalibrate rather than suppress.
               </p>
             </div>
             <div className="flex flex-col gap-3 rounded-2xl bg-white p-8 dark:bg-neutral-900">
               <span className="text-3xl font-semibold text-red-500">04</span>
               <h4 className="text-lg text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Cardiovascular</h4>
               <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                The leading cause of death worldwide. VARL simulates cardiac tissue mechanics, arterial plaque formation, and hemodynamic stress at molecular resolution. We predict heart failure years before clinical onset and design interventions that reverse vascular damage at its source.
+                The leading cause of death worldwide. We are building simulation frameworks that model cardiac tissue mechanics, arterial plaque formation, and hemodynamic stress at molecular resolution — designed to predict heart failure years before clinical onset and inform interventions that target vascular damage at its source.
               </p>
             </div>
             <div className="flex flex-col gap-3 rounded-2xl bg-white p-8 dark:bg-neutral-900">
               <span className="text-3xl font-semibold text-red-500">05</span>
               <h4 className="text-lg text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Rare Diseases</h4>
               <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                7,000+ rare diseases, 95% have no approved treatment. Traditional pharma ignores them because the economics don&apos;t work. VARL&apos;s computational approach makes rare disease research economically viable by eliminating the cost barriers of physical experimentation. Every patient deserves a treatment, regardless of the size of the population.
+                7,000+ rare diseases, 95% have no approved treatment. Traditional pharma ignores them because the economics don&apos;t work. A computational approach can make rare disease research economically viable by eliminating the cost barriers of physical experimentation. Every patient deserves a treatment, regardless of the size of the population.
               </p>
             </div>
             <div className="flex flex-col gap-3 rounded-2xl bg-white p-8 dark:bg-neutral-900">
               <span className="text-3xl font-semibold text-red-500">06</span>
               <h4 className="text-lg text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>Infectious Disease</h4>
               <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
-                Pandemics will happen again. VARL&apos;s platform anticipates pathogen mutation trajectories, pre-computes vaccine candidates for variants that don&apos;t yet exist, and models population-level transmission dynamics. When the next outbreak arrives, we respond in days, not months.
+                Pandemics will happen again. Our platform is being architected to anticipate pathogen mutation trajectories, pre-compute vaccine candidates for variants that don&apos;t yet exist, and model population-level transmission dynamics. When the next outbreak arrives, the goal is to respond in days, not months.
               </p>
             </div>
           </FadeInStagger>
