@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* By the Numbers */}
-      <section className="w-full" style={{ padding: "13px 13px 0" }}>
+      <section className="w-full" style={{ padding: "13px 13px 13px" }}>
         <div className="rounded-2xl bg-gray-50 py-20 dark:bg-neutral-900">
           <div className="mx-auto max-w-5xl px-12">
             <span className="text-xs tracking-widest text-gray-400" style={{ fontWeight: 500 }}>THE SCALE OF THE PROBLEM</span>
@@ -113,7 +113,8 @@ export default function Home() {
       </section>
 
       {/* Historic Photo + Quote */}
-      <div className="relative w-full overflow-hidden">
+      <div className="w-full" style={{ padding: "0 13px 13px" }}>
+      <div className="relative w-full overflow-hidden rounded-2xl">
         <div className="flex h-[800px] w-full items-center justify-between bg-black px-20">
           <img src="/historic.webp" alt="" className="h-[65%] object-contain" />
           <img src="/historic2.webp" alt="" className="h-[65%] object-contain" />
@@ -125,7 +126,7 @@ export default function Home() {
             We are finally building the language.
           </p>
           <p className="max-w-lg text-sm leading-relaxed text-white/50" style={{ fontWeight: 400 }}>
-            Not long ago, doctors recommended cigarettes. The science was confident. The advertisements were everywhere. Millions trusted the system. The system was wrong.
+            Not long ago, doctors recommended cigarettes. The science was confident. The advertisements were everywhere. Millions trusted the system. The system was wrong. We believe it still is.
           </p>
           <div className="h-px w-16 bg-white/15"></div>
           <p className="max-w-lg text-base leading-relaxed text-white/70" style={{ fontWeight: 400 }}>
@@ -142,57 +143,60 @@ export default function Home() {
           &ldquo;More Doctors Smoke Camels&rdquo; — R.J. Reynolds Tobacco Company, c. 1946
         </span>
       </div>
+      </div>
 
       {/* Our Science — 5-step strip */}
-      <section className="w-full" style={{ padding: "80px 13px" }}>
-        <div className="mx-auto max-w-5xl px-8 pb-16">
-          <span className="text-xs tracking-widest text-gray-400" style={{ fontWeight: 500 }}>OUR APPROACH</span>
-          <h2 className="mt-3 text-5xl tracking-tight text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>
-            Five Steps to Discovery
-          </h2>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-500 dark:text-gray-400" style={{ fontWeight: 400 }}>
-            A unified scientific framework that takes biology from raw observation to actionable healing. Each step builds on the last, creating a compounding cycle of intelligence.
-          </p>
-        </div>
+      <section className="w-full" style={{ padding: "0 13px 13px" }}>
+        <div className="rounded-2xl bg-gray-50 py-20 dark:bg-neutral-900">
+          <div className="mx-auto max-w-5xl px-12 pb-16">
+            <span className="text-xs tracking-widest text-gray-400" style={{ fontWeight: 500 }}>OUR APPROACH</span>
+            <h2 className="mt-3 text-5xl tracking-tight text-gray-900 dark:text-gray-100" style={{ fontWeight: 500 }}>
+              Five Steps to Discovery
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-500 dark:text-gray-400" style={{ fontWeight: 400 }}>
+              A unified scientific framework that takes biology from raw observation to actionable healing. Each step builds on the last, creating a compounding cycle of intelligence.
+            </p>
+          </div>
 
-        <div className="mx-auto max-w-5xl px-8">
-          <div className="flex overflow-hidden rounded-2xl">
-            <Link href="/science#observe" className="group flex w-1/5 flex-col gap-3 bg-gray-950 p-7 transition-colors hover:bg-gray-900 dark:bg-gray-950" style={{ minHeight: "220px" }}>
-              <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>01</span>
-              <span className="text-lg text-white" style={{ fontWeight: 500 }}>Observe</span>
-              <span className="mt-auto text-xs leading-relaxed text-white/35">Capture biological signals at molecular resolution.</span>
-            </Link>
-            <Link href="/science#compute" className="group flex w-1/5 flex-col gap-3 bg-gray-900 p-7 transition-colors hover:bg-gray-800 dark:bg-gray-900" style={{ minHeight: "220px" }}>
-              <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>02</span>
-              <span className="text-lg text-white" style={{ fontWeight: 500 }}>Compute</span>
-              <span className="mt-auto text-xs leading-relaxed text-white/35">Build digital twins. Run thousands of simulations in parallel.</span>
-            </Link>
-            <Link href="/science#discover" className="group flex w-1/5 flex-col gap-3 bg-gray-800 p-7 transition-colors hover:bg-gray-700 dark:bg-gray-800" style={{ minHeight: "220px" }}>
-              <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>03</span>
-              <span className="text-lg text-white" style={{ fontWeight: 500 }}>Discover</span>
-              <span className="mt-auto text-xs leading-relaxed text-white/35">Find the hidden pathways and molecular levers that matter.</span>
-            </Link>
-            <Link href="/science#heal" className="group flex w-1/5 flex-col gap-3 bg-gray-700 p-7 transition-colors hover:bg-gray-600 dark:bg-gray-700" style={{ minHeight: "220px" }}>
-              <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>04</span>
-              <span className="text-lg text-white" style={{ fontWeight: 500 }}>Heal</span>
-              <span className="mt-auto text-xs leading-relaxed text-white/35">Design precise interventions validated computationally.</span>
-            </Link>
-            <Link href="/science#evolve" className="group flex w-1/5 flex-col gap-3 bg-gray-600 p-7 transition-colors hover:bg-gray-500 dark:bg-gray-600" style={{ minHeight: "220px" }}>
-              <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>05</span>
-              <span className="text-lg text-white" style={{ fontWeight: 500 }}>Evolve</span>
-              <span className="mt-auto text-xs leading-relaxed text-white/35">Every discovery feeds back. The platform learns with every cycle.</span>
+          <div className="mx-auto max-w-5xl px-12">
+            <div className="flex overflow-hidden rounded-2xl">
+              <Link href="/science#observe" className="group flex w-1/5 flex-col gap-3 bg-gray-950 p-7 transition-colors hover:bg-gray-900 dark:bg-gray-950" style={{ minHeight: "220px" }}>
+                <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>01</span>
+                <span className="text-lg text-white" style={{ fontWeight: 500 }}>Observe</span>
+                <span className="mt-auto text-xs leading-relaxed text-white/35">Capture biological signals at molecular resolution.</span>
+              </Link>
+              <Link href="/science#compute" className="group flex w-1/5 flex-col gap-3 bg-gray-900 p-7 transition-colors hover:bg-gray-800 dark:bg-gray-900" style={{ minHeight: "220px" }}>
+                <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>02</span>
+                <span className="text-lg text-white" style={{ fontWeight: 500 }}>Compute</span>
+                <span className="mt-auto text-xs leading-relaxed text-white/35">Build digital twins. Run thousands of simulations in parallel.</span>
+              </Link>
+              <Link href="/science#discover" className="group flex w-1/5 flex-col gap-3 bg-gray-800 p-7 transition-colors hover:bg-gray-700 dark:bg-gray-800" style={{ minHeight: "220px" }}>
+                <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>03</span>
+                <span className="text-lg text-white" style={{ fontWeight: 500 }}>Discover</span>
+                <span className="mt-auto text-xs leading-relaxed text-white/35">Find the hidden pathways and molecular levers that matter.</span>
+              </Link>
+              <Link href="/science#heal" className="group flex w-1/5 flex-col gap-3 bg-gray-700 p-7 transition-colors hover:bg-gray-600 dark:bg-gray-700" style={{ minHeight: "220px" }}>
+                <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>04</span>
+                <span className="text-lg text-white" style={{ fontWeight: 500 }}>Heal</span>
+                <span className="mt-auto text-xs leading-relaxed text-white/35">Design precise interventions validated computationally.</span>
+              </Link>
+              <Link href="/science#evolve" className="group flex w-1/5 flex-col gap-3 bg-gray-600 p-7 transition-colors hover:bg-gray-500 dark:bg-gray-600" style={{ minHeight: "220px" }}>
+                <span className="text-xs tracking-widest text-white/30" style={{ fontWeight: 500 }}>05</span>
+                <span className="text-lg text-white" style={{ fontWeight: 500 }}>Evolve</span>
+                <span className="mt-auto text-xs leading-relaxed text-white/35">Every discovery feeds back. The platform learns with every cycle.</span>
+              </Link>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-10 flex max-w-5xl justify-end px-12">
+            <Link
+              href="/science"
+              className="inline-flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-gray-900 dark:hover:text-white"
+              style={{ fontWeight: 450 }}
+            >
+              Explore Our Science <ArrowUpRight size={14} strokeWidth={1.5} />
             </Link>
           </div>
-        </div>
-
-        <div className="mx-auto mt-10 flex max-w-5xl justify-end px-8">
-          <Link
-            href="/science"
-            className="inline-flex items-center gap-2 text-sm text-gray-400 transition-colors hover:text-gray-900 dark:hover:text-white"
-            style={{ fontWeight: 450 }}
-          >
-            Explore Our Science <ArrowUpRight size={14} strokeWidth={1.5} />
-          </Link>
         </div>
       </section>
 
