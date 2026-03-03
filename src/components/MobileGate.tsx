@@ -19,18 +19,40 @@ export default function MobileGate({ children }: { children: React.ReactNode }) 
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  useEffect(() => {
+    if (isMobile) {
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
+      document.body.style.height = "100%";
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.height = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.height = "";
+    };
+  }, [isMobile]);
+
   if (!checked) return null;
 
   if (isMobile) {
     return (
-      <div className="fixed inset-0 z-[9999] flex flex-col bg-black">
-        <div className="absolute inset-0">
+      <div
+        className="fixed inset-0 z-[9999] flex flex-col bg-black"
+        style={{ touchAction: "none", overflow: "hidden" }}
+      >
+        <div className="absolute inset-0" style={{ touchAction: "none" }}>
           <HeartParticles />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/90" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/90" />
 
-        {/* Logo — kalbin üstünde */}
-        <div className="relative z-10 flex justify-center pt-16">
+        <div className="pointer-events-none relative z-10 flex justify-center pt-16">
           <img
             src="/header-logo.png"
             alt="VARL"
@@ -38,11 +60,9 @@ export default function MobileGate({ children }: { children: React.ReactNode }) 
           />
         </div>
 
-        {/* Spacer — kalp animasyonu ortada görünsün */}
         <div className="flex-1" />
 
-        {/* Alt kısım — yazılar */}
-        <div className="relative z-10 flex flex-col gap-5 px-8 pb-16">
+        <div className="pointer-events-none relative z-10 flex flex-col gap-5 px-8 pb-6">
           <h1 className="text-4xl leading-tight tracking-tight" style={{ fontWeight: 700, letterSpacing: "-0.025em" }}>
             <span className="bg-gradient-to-r from-red-500 via-rose-500 to-pink-400 bg-clip-text text-transparent">
               Coming soon<br />to mobile.

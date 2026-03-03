@@ -138,15 +138,16 @@ export default function HeartParticles() {
     };
     const handleLeave = () => { mouseX = -9999; mouseY = -9999; };
     const handleTouch = (e: TouchEvent) => {
+      e.preventDefault();
       const rect = canvas!.getBoundingClientRect();
       const t = e.touches[0];
       if (t) { mouseX = t.clientX - rect.left; mouseY = t.clientY - rect.top; }
     };
-    const handleTouchEnd = () => { mouseX = -9999; mouseY = -9999; };
+    const handleTouchEnd = (e: TouchEvent) => { e.preventDefault(); mouseX = -9999; mouseY = -9999; };
     container?.addEventListener("mousemove", handleMouse);
     container?.addEventListener("mouseleave", handleLeave);
-    container?.addEventListener("touchstart", handleTouch, { passive: true });
-    container?.addEventListener("touchmove", handleTouch, { passive: true });
+    container?.addEventListener("touchstart", handleTouch, { passive: false });
+    container?.addEventListener("touchmove", handleTouch, { passive: false });
     container?.addEventListener("touchend", handleTouchEnd);
     container?.addEventListener("touchcancel", handleTouchEnd);
 
