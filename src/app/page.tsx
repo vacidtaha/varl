@@ -7,6 +7,7 @@ import JoinUs from "@/components/JoinUs";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import dynamic from "next/dynamic";
+import { articles } from "@/data/articles";
 
 const HeartParticles = dynamic(() => import("@/components/HeartParticles"), { ssr: false });
 
@@ -201,7 +202,7 @@ export default function Home() {
           Latest From
         </h3>
 
-        <a href="#" className="group flex h-[360px] w-full overflow-hidden rounded-2xl">
+        <a href="/latest/regenerative-agriculture-framework" className="group flex h-[360px] w-full overflow-hidden rounded-2xl">
           <img src="/latest-1.webp" alt="" loading="lazy" className="h-full w-[65%] object-cover transition-transform duration-500 group-hover:scale-105" />
           <div className="flex h-full w-[35%] flex-col justify-center gap-3 bg-white p-8 dark:bg-neutral-900">
             <span className="text-xs tracking-wide text-gray-400">February 10, 2026</span>
@@ -211,7 +212,7 @@ export default function Home() {
         </a>
 
         <div className="flex w-full gap-8">
-          <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
+          <a href="/latest/biological-camouflage-drug-delivery" className="group w-1/2 overflow-hidden rounded-2xl">
             <img src="/latest-2.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">February 3, 2026</span>
@@ -219,7 +220,7 @@ export default function Home() {
               <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400">Nature&#39;s stealth mechanisms are guiding VARL&#39;s next-gen targeted therapies.</p>
             </div>
           </a>
-          <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
+          <a href="/latest/protein-engineering-lab" className="group w-1/2 overflow-hidden rounded-2xl">
             <img src="/latest-3.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">January 28, 2026</span>
@@ -229,7 +230,7 @@ export default function Home() {
           </a>
         </div>
         <div className="flex w-full gap-8">
-          <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
+          <a href="/latest/digital-twin-health-trajectories" className="group w-1/2 overflow-hidden rounded-2xl">
             <img src="/latest-4.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">January 15, 2026</span>
@@ -237,7 +238,7 @@ export default function Home() {
               <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400">Personalized simulations that predict disease before symptoms appear.</p>
             </div>
           </a>
-          <a href="#" className="group w-1/2 overflow-hidden rounded-2xl">
+          <a href="/latest/novel-biomarkers-early-detection" className="group w-1/2 overflow-hidden rounded-2xl">
             <img src="/latest-5.webp" alt="" loading="lazy" className="aspect-[1/0.6] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.4] w-full flex-col justify-center gap-2 bg-white p-6 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">January 6, 2026</span>
@@ -248,7 +249,7 @@ export default function Home() {
         </div>
 
         <div className="flex w-full gap-8">
-          <a href="#" className="group w-1/3 overflow-hidden rounded-2xl">
+          <a href="/latest/ai-plant-stress-prediction" className="group w-1/3 overflow-hidden rounded-2xl">
             <img src="/latest-6.webp" alt="" loading="lazy" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.5] w-full flex-col justify-center gap-2 bg-white p-5 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">December 20, 2025</span>
@@ -256,7 +257,7 @@ export default function Home() {
               <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400">Lab-grown resilience testing for smarter crops.</p>
             </div>
           </a>
-          <a href="#" className="group w-1/3 overflow-hidden rounded-2xl">
+          <a href="/latest/tomato-genome-nutritional-potential" className="group w-1/3 overflow-hidden rounded-2xl">
             <img src="/latest-7.webp" alt="" loading="lazy" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.5] w-full flex-col justify-center gap-2 bg-white p-5 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">December 11, 2025</span>
@@ -264,7 +265,7 @@ export default function Home() {
               <p className="text-xs leading-relaxed text-gray-500 dark:text-gray-400">How AI maps flavor, nutrition, and yield at once.</p>
             </div>
           </a>
-          <a href="#" className="group w-1/3 overflow-hidden rounded-2xl">
+          <a href="/latest/lipid-nanoparticles-cellular-repair" className="group w-1/3 overflow-hidden rounded-2xl">
             <img src="/latest-8.webp" alt="" loading="lazy" className="aspect-[1/0.5] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="flex aspect-[1/0.5] w-full flex-col justify-center gap-2 bg-white p-5 dark:bg-neutral-900">
               <span className="text-xs tracking-wide text-gray-400">November 29, 2025</span>
