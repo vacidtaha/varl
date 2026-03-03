@@ -93,7 +93,7 @@ export default function HeartParticles() {
     function calcTargets() {
       const s = Math.min(W, H) * 0.022;
       const cx = W / 2;
-      const cy = H / 2;
+      const cy = H * 0.4;
       for (let i = 0; i < N; i++) {
         const [ptx, pty] = randomHeartPoint();
         tx[i] = cx + ptx * s;
@@ -137,8 +137,18 @@ export default function HeartParticles() {
       mouseY = e.clientY - rect.top;
     };
     const handleLeave = () => { mouseX = -9999; mouseY = -9999; };
+    const handleTouch = (e: TouchEvent) => {
+      const rect = canvas!.getBoundingClientRect();
+      const t = e.touches[0];
+      if (t) { mouseX = t.clientX - rect.left; mouseY = t.clientY - rect.top; }
+    };
+    const handleTouchEnd = () => { mouseX = -9999; mouseY = -9999; };
     container?.addEventListener("mousemove", handleMouse);
     container?.addEventListener("mouseleave", handleLeave);
+    container?.addEventListener("touchstart", handleTouch, { passive: true });
+    container?.addEventListener("touchmove", handleTouch, { passive: true });
+    container?.addEventListener("touchend", handleTouchEnd);
+    container?.addEventListener("touchcancel", handleTouchEnd);
 
     const beatSpeed = 0.04;
     const beatAmount = 0.03;
@@ -219,6 +229,10 @@ export default function HeartParticles() {
       window.removeEventListener("resize", handleResize);
       container?.removeEventListener("mousemove", handleMouse);
       container?.removeEventListener("mouseleave", handleLeave);
+      container?.removeEventListener("touchstart", handleTouch);
+      container?.removeEventListener("touchmove", handleTouch);
+      container?.removeEventListener("touchend", handleTouchEnd);
+      container?.removeEventListener("touchcancel", handleTouchEnd);
     };
   }, [visible]);
 
