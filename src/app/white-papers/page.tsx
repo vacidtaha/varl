@@ -63,20 +63,19 @@ export default function WhitePapersPage() {
             </p>
           </FadeIn>
 
-          <FadeInStagger className="mt-16 grid grid-cols-2 gap-8" stagger={0.1}>
+          <div className="mt-16 grid grid-cols-2 gap-8">
             {visible.map((paper) => (
-              <a
+              <div
                 key={paper.id}
-                href="#"
-                className="group relative flex aspect-[1/1.414] flex-col overflow-hidden rounded-2xl bg-gray-100 transition-all hover:shadow-lg dark:bg-neutral-800"
+                className="relative flex aspect-[1/1.414] flex-col overflow-hidden rounded-2xl bg-gray-100 dark:bg-neutral-800"
               >
-                <div className="flex flex-1 items-start p-10">
+                <div className="flex flex-1 items-start p-10" style={{ filter: "blur(4px)", userSelect: "none" }}>
                   <h3 className="max-w-sm text-4xl leading-snug tracking-tight text-gray-700 dark:text-gray-200" style={{ fontWeight: 600 }}>
                     {paper.title}
                   </h3>
                 </div>
 
-                <div className="flex h-[180px] flex-col gap-3 bg-gray-50 px-10 py-6 dark:bg-neutral-900">
+                <div className="flex h-[180px] flex-col gap-3 bg-gray-50 px-10 py-6 dark:bg-neutral-900" style={{ filter: "blur(4px)", userSelect: "none" }}>
                   <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
                     {paper.abstract}
                   </p>
@@ -92,15 +91,14 @@ export default function WhitePapersPage() {
                   </div>
                 </div>
 
-                {/* Hover overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/5">
-                  <span className="rounded-full bg-white px-5 py-2 text-sm text-gray-700 opacity-0 shadow-sm transition-opacity group-hover:opacity-100 dark:bg-neutral-700 dark:text-gray-200">
-                    Read Paper
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="rounded-full bg-white/90 px-5 py-2 text-xs tracking-wide text-gray-500 shadow-sm backdrop-blur-sm dark:bg-neutral-800/90 dark:text-gray-400" style={{ fontWeight: 500 }}>
+                    Finalizing for publication.
                   </span>
                 </div>
-              </a>
+              </div>
             ))}
-          </FadeInStagger>
+          </div>
 
           {/* Pagination */}
           <FadeIn>
