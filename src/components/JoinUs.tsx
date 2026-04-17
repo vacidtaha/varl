@@ -25,7 +25,7 @@ export default function JoinUs({
           <h2 className="text-2xl tracking-tight text-white" style={{ fontWeight: 500 }}>
             {title}
           </h2>
-          <p className="max-w-xl text-sm leading-relaxed text-white/80">
+          <p className="max-w-xl text-xs leading-relaxed text-white/70">
             {description}
           </p>
         </div>

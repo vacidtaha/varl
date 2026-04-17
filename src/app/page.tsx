@@ -111,32 +111,32 @@ export default function Home() {
             </Link>
           </div>
           {/* 01 — Observe */}
-          {/* 01 — Observe: mobile=col (anim top), desktop=row (anim left) */}
+          {/* 01 — Observe */}
           <div className="mx-auto flex w-full max-w-[1300px] flex-col overflow-hidden rounded-md bg-white lg:aspect-[3/2] lg:flex-row lg:rounded-lg dark:bg-neutral-800">
-            <div className="aspect-[4/3] w-full lg:aspect-auto lg:w-[66%]">
+            <div className="aspect-[16/10] w-full lg:aspect-auto lg:w-[66%]">
               <ObserveAnimation />
             </div>
-            <div className="flex flex-col justify-center gap-4 px-5 py-6 lg:flex-1 lg:gap-5 lg:px-10 lg:py-0">
-              <p className="text-sm leading-relaxed text-gray-600 lg:text-xl dark:text-gray-400" style={{ fontWeight: 400 }}>
+            <div className="flex flex-col justify-center gap-3 px-5 py-5 lg:flex-1 lg:gap-5 lg:px-10 lg:py-0">
+              <p className="text-xs leading-relaxed text-gray-600 lg:text-xl dark:text-gray-400" style={{ fontWeight: 400 }}>
                 <span className="text-gray-900 dark:text-gray-100">We read biology.</span> Every database. Every published study. Every recorded interaction between molecules that science has ever captured. All of it cross-referenced into a single atlas of how life works. Before we can solve anything, we need to understand everything.
               </p>
-              <Link href="/science#observe" className="inline-flex items-center gap-1.5 text-sm transition-colors lg:text-xl hover:![color:#1d4ed8]" style={{ fontWeight: 450, color: "#2563eb" }}>
-                Gene Expression Analysis <ArrowUpRight size={20} strokeWidth={1.5} />
+              <Link href="/science#observe" className="inline-flex items-center gap-1.5 text-xs transition-colors lg:text-xl hover:![color:#1d4ed8]" style={{ fontWeight: 450, color: "#2563eb" }}>
+                Gene Expression Analysis <ArrowUpRight size={16} strokeWidth={1.5} />
               </Link>
             </div>
           </div>
 
-          {/* 02 — Compute: mobile=col (anim top), desktop=row (text left, anim right) */}
+          {/* 02 — Compute */}
           <div className="mx-auto flex w-full max-w-[1300px] flex-col overflow-hidden rounded-md bg-white lg:aspect-[3/2] lg:flex-row lg:rounded-lg dark:bg-neutral-800">
-            <div className="aspect-[4/3] w-full lg:hidden">
+            <div className="aspect-[16/10] w-full lg:hidden">
               <ComputeAnimation />
             </div>
-            <div className="flex flex-col justify-center gap-4 px-5 py-6 lg:flex-1 lg:gap-5 lg:px-10 lg:py-0">
-              <p className="text-sm leading-relaxed text-gray-600 lg:text-xl dark:text-gray-400" style={{ fontWeight: 400 }}>
+            <div className="flex flex-col justify-center gap-3 px-5 py-5 lg:flex-1 lg:gap-5 lg:px-10 lg:py-0">
+              <p className="text-xs leading-relaxed text-gray-600 lg:text-xl dark:text-gray-400" style={{ fontWeight: 400 }}>
                 <span className="text-gray-900 dark:text-gray-100">Every disease gets its own map. Built for one person.</span> The points in that space are not just genes and proteins. They are metabolites, lipids, epigenetic marks, non-coding RNAs, chromatin states, signaling cascades, and hundreds of other molecular species we are still naming. All of it, mapped for that one biology. Not a map of cancer. Mateo&apos;s cancer. Not a map of Alzheimer&apos;s. Eleanor&apos;s Alzheimer&apos;s.
               </p>
-              <Link href="/science#compute" className="inline-flex items-center gap-1.5 text-sm transition-colors lg:text-xl hover:![color:#1d4ed8]" style={{ fontWeight: 450, color: "#2563eb" }}>
-                Digital Twin Simulation <ArrowUpRight size={20} strokeWidth={1.5} />
+              <Link href="/science#compute" className="inline-flex items-center gap-1.5 text-xs transition-colors lg:text-xl hover:![color:#1d4ed8]" style={{ fontWeight: 450, color: "#2563eb" }}>
+                Digital Twin Simulation <ArrowUpRight size={16} strokeWidth={1.5} />
               </Link>
             </div>
             <div className="hidden lg:block lg:w-[66%]">
@@ -144,17 +144,17 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 03 — Discover: mobile=col (anim top), desktop=row (anim left) */}
+          {/* 03 — Discover */}
           <div className="mx-auto flex w-full max-w-[1300px] flex-col overflow-hidden rounded-md bg-white lg:aspect-[3/2] lg:flex-row lg:rounded-lg dark:bg-neutral-800">
-            <div className="aspect-[4/3] w-full lg:aspect-auto lg:w-[66%]">
+            <div className="aspect-[16/11] w-full lg:aspect-auto lg:w-[66%]">
               <DiscoverAnimation />
             </div>
-            <div className="flex flex-col justify-center gap-4 px-5 py-6 lg:flex-1 lg:gap-5 lg:px-10 lg:py-0">
-              <p className="text-sm leading-relaxed text-gray-600 lg:text-xl dark:text-gray-400" style={{ fontWeight: 400 }}>
+            <div className="flex flex-col justify-center gap-3 px-5 py-5 lg:flex-1 lg:gap-5 lg:px-10 lg:py-0">
+              <p className="text-xs leading-relaxed text-gray-600 lg:text-xl dark:text-gray-400" style={{ fontWeight: 400 }}>
                 <span className="text-gray-900 dark:text-gray-100">Then we find the answer.</span> Billions of simulations run against that map. Billions of combinations tested, scored, and discarded. Until the system finds the precise points in that molecular landscape where an intervention will actually work. The levers that, when moved in the right order, reverse the disease. Repair the damage. Start the recovery. For that map. For that person.
               </p>
-              <Link href="/science#discover" className="inline-flex items-center gap-1.5 text-sm transition-colors lg:text-xl hover:![color:#1d4ed8]" style={{ fontWeight: 450, color: "#2563eb" }}>
-                Target Identification <ArrowUpRight size={20} strokeWidth={1.5} />
+              <Link href="/science#discover" className="inline-flex items-center gap-1.5 text-xs transition-colors lg:text-xl hover:![color:#1d4ed8]" style={{ fontWeight: 450, color: "#2563eb" }}>
+                Target Identification <ArrowUpRight size={16} strokeWidth={1.5} />
               </Link>
             </div>
           </div>
