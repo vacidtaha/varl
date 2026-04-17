@@ -162,8 +162,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Historic Photo + Quote */}
-      <div className="w-full" style={{ padding: "0 13px 13px" }}>
+      {/* Historic Photo + Quote — desktop only */}
+      <div className="hidden w-full lg:block" style={{ padding: "0 13px 13px" }}>
       <div className="relative w-full overflow-hidden rounded-2xl bg-black">
         {/* Desktop layout */}
         <div className="hidden h-[800px] w-full items-center justify-between px-20 lg:flex">
